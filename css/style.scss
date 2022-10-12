@@ -27,6 +27,7 @@ body{
     font-style: light;
     background-repeat: no-repeat;
     background-color: #0F1D17; 
+    overflow-x: hidden;
     
     
     
@@ -308,6 +309,7 @@ footer{
         justify-content: space-between;
         align-items: center;
         margin-top: 66px;
+        
        
         
         .logo{
@@ -335,7 +337,7 @@ footer{
             display: flex;
             justify-content: center;
             align-items: center;
-           
+            
             
 
             h4{
@@ -358,6 +360,7 @@ footer{
                 border: none;
                 padding: 8px 16px 16px 16px;
                 margin-left: 47px;
+                margin-right: 1.5rem;
                 font-size: 16.58px;
                 color: #47BD8F;
                 background-color: #47BD8F;
