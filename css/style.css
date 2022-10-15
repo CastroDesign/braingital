@@ -18,6 +18,7 @@ body {
   font-style: light;
   background-repeat: no-repeat;
   background-color: #0F1D17;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -30,11 +31,73 @@ img {
 }
 
 .wrapper {
-  background-image: url("/images/Ellipse 5.svg"), url("/images/Ellipse 11.svg"), url("/images/Vector 2.svg"), url("/images/Ellipse 1.svg"), url("/images/Ellipse 13.svg");
-  background-size: cover;
-  background-size: 120px;
-  background-repeat: no-repeat;
-  background-position: right ,bottom , center ,top left , bottom left,center left;
+  position: relative;
+}
+
+.wrapper .float {
+  position: absolute;
+  z-index: -99;
+}
+
+.wrapper .float img {
+  width: 100px;
+}
+
+.wrapper .float .float1,
+.wrapper .float .float2,
+.wrapper .float .float3,
+.wrapper .float .float4,
+.wrapper .float .float5,
+.wrapper .float .float6,
+.wrapper .float .float7,
+.wrapper .float .float8 {
+  -webkit-animation: bounce 0.8s;
+          animation: bounce 0.8s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.wrapper .float .float1 {
+  position: absolute;
+  top: 900px;
+  left: 340px;
+}
+
+.wrapper .float .float2 {
+  position: absolute;
+  top: 200px;
+  left: 90px;
+}
+
+.wrapper .float .float3 {
+  position: absolute;
+  bottom: -100rem;
+  left: 200px;
+}
+
+.wrapper .float .float4 {
+  position: absolute;
+  top: 600px;
+  left: 100px;
+}
+
+.wrapper .float .float5 {
+  position: absolute;
+  left: 80px;
+}
+
+.wrapper .float .float6 {
+  display: none;
+}
+
+.wrapper .float .float7 {
+  display: none;
+}
+
+.wrapper .float .float8 {
+  display: none;
 }
 
 .wrapper .rec {
@@ -238,11 +301,71 @@ footer .checkdp a {
   .wrapper {
     position: relative;
     margin: 66px 100px 59px 100px;
-    background-image: url("/images/Ellipse 10.svg "), url("/images/Ellipse 4.svg"), url("/images/Vector 2.svg"), url("/images/Ellipse 1.svg"), url("/images/Ellipse 13.svg"), url("/images/Ellipse 5.svg"), url("/images/Ellipse 11.svg"), url("/images/Ellipse 4 (1).svg");
-    background-size: 100px;
-    background-repeat: no-repeat;
-    background-position: 100px 50px , 50% 100% , 70%  80%;
-    background-position: right bottom , left bottom , center , top right , left , bottom , right center , top center;
+    background-image: none;
+  }
+  .wrapper .float {
+    position: absolute;
+    z-index: -99;
+  }
+  .wrapper .float img {
+    width: 100px;
+  }
+  .wrapper .float .float1,
+  .wrapper .float .float2,
+  .wrapper .float .float3,
+  .wrapper .float .float4,
+  .wrapper .float .float5,
+  .wrapper .float .float6,
+  .wrapper .float .float7,
+  .wrapper .float .float8 {
+    -webkit-animation: bounce 0.8s;
+            animation: bounce 0.8s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .wrapper .float .float1 {
+    position: absolute;
+    top: 200px;
+  }
+  .wrapper .float .float2 {
+    position: absolute;
+    left: 450px;
+    top: 400px;
+  }
+  .wrapper .float .float3 {
+    position: absolute;
+    left: 50px;
+    top: 600px;
+  }
+  .wrapper .float .float4 {
+    position: absolute;
+    left: 50px;
+    top: 400px;
+  }
+  .wrapper .float .float5 {
+    position: absolute;
+    left: 500px;
+    bottom: -700px;
+  }
+  .wrapper .float .float6 {
+    display: block;
+    position: absolute;
+    left: 500px;
+    top: 100px;
+  }
+  .wrapper .float .float7 {
+    display: block;
+    position: absolute;
+    left: 900px;
+    top: 600px;
+  }
+  .wrapper .float .float8 {
+    display: block;
+    position: absolute;
+    left: 870px;
+    top: 100px;
   }
   .wrapper .rec {
     display: block;
@@ -470,31 +593,39 @@ footer .checkdp a {
 
 @-webkit-keyframes bounce {
   0% {
-    background-position: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   30% {
-    background-position: 0;
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
   }
   5% {
-    background-position: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   100% {
-    background-position: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 @keyframes bounce {
   0% {
-    background-position: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   30% {
-    background-position: 0;
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
   }
   5% {
-    background-position: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   100% {
-    background-position: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 /*# sourceMappingURL=style.css.map */
