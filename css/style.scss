@@ -27,13 +27,6 @@ body{
     overflow-x: hidden;
     scroll-behavior: smooth;
    
-   
-    
-    
-    
-  
-    
-    
     
 }
 
@@ -56,7 +49,7 @@ img{
         z-index: -99;
 
         img{
-            width: 100px;
+            width: 90px;
            
         }
         .float1,
@@ -74,8 +67,8 @@ img{
         }
         .float1{
             position: absolute;
-           top: 900px;
-           left: 340px;
+           top: 800px;
+           left: 20px;
             
         }
         .float2{
@@ -104,7 +97,7 @@ img{
         }
         .float6{
             display: none;
-           
+            position: unset;
         }
         .float7{
             display: none;
@@ -643,7 +636,7 @@ footer{
         transform: translateY(0);
     }
     30%{
-        transform: translateY(-15px);
+        transform: translateY(-10px);
     }
     5%{
         transform: translateY(0);

@@ -40,7 +40,7 @@ img {
 }
 
 .wrapper .float img {
-  width: 100px;
+  width: 90px;
 }
 
 .wrapper .float .float1,
@@ -61,8 +61,8 @@ img {
 
 .wrapper .float .float1 {
   position: absolute;
-  top: 900px;
-  left: 340px;
+  top: 800px;
+  left: 20px;
 }
 
 .wrapper .float .float2 {
@@ -90,6 +90,7 @@ img {
 
 .wrapper .float .float6 {
   display: none;
+  position: unset;
 }
 
 .wrapper .float .float7 {
@@ -597,8 +598,8 @@ footer .checkdp a {
             transform: translateY(0);
   }
   30% {
-    -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   5% {
     -webkit-transform: translateY(0);
@@ -616,8 +617,8 @@ footer .checkdp a {
             transform: translateY(0);
   }
   30% {
-    -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   5% {
     -webkit-transform: translateY(0);
