@@ -68,7 +68,7 @@ img{
         .float1{
             position: absolute;
            top: 800px;
-           left: 20px;
+           left: 100px;
             
         }
         .float2{
@@ -145,7 +145,7 @@ header{
 
 .hero{
   
-   margin: 112px 20px;
+    margin: 112px 20px;
 
 
     .hero-desc{
@@ -289,32 +289,87 @@ footer{
     }
 }
 
-//======================== MEDIA QUERY=====================
-@media only screen and(min-width: 600px){
+
+@media only screen and(min-width: 800px){
+    
+  
+.hero{
+    
+    
+    
+    h2{
+        color: #DADADA;
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 48px;
+        
+       
+    }
+
+    p{
+        color: #DADADA;
+        line-height: 23px;
+        margin-top: 32px;
+    }
+    h4{
+        color: #717171;
+        display: flex;
+        margin-top: 32px;
+        text-align: start;
+        
+        
+
+      
+    }
+    .hero-desc{
+        animation: introLoad 1s ease-in;
+        margin: 4.5rem;
+       
+    }    
 
     
-
-
     .our-client{
-       
-        width: 100%;
-        
-        
-    .box-container{
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        grid-template-columns: 1fr 1fr 1fr ;
-        gap: 1px;
-        width: 100%;
-        .box-1{
-            img{
-                width: 100%;
-                transition: 0.5s ease-in-out;
+    
+        h4{
+            font-size: 16px;
+            color: #DADADA;
+            margin: 40px 60px;
+        }
+    
+        .box-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            gap: 10px;
+            width: 90%;
+    
+            
+            .box-1{
+                
+               
+                img{
+                    width: 100%;
+                    transition: 0.5s ease-in-out;
+                   
+                    &:hover {
+                   
+                        
+                        transform: scale(1.1);
+                        
+                        
+                    }
+                  
+                        
+                }
+    
+                
+               
             }
         }
+      }
     }
- }
 
 }
 
@@ -330,7 +385,9 @@ footer{
         background-repeat: no-repeat;
         background-color: #0F1D17; 
         overflow-x: hidden;
+       
         // overflow-y: hidden;
+        
       
 
     }
@@ -338,9 +395,11 @@ footer{
 
     .wrapper{
         position: relative;
-        margin: 66px 100px 59px 100px;
+        margin-left: 80px;
+        margin-right: 50px;
+        margin-top: 60px;
         background-image: none;
-
+        
 
         .float{
             position: absolute;
@@ -350,13 +409,48 @@ footer{
                 width: 100px;
                
             }
-            .float1,
-            .float2,
-            .float3,
-            .float4,
-            .float5,
-            .float6,
-            .float7,
+            .float1{
+
+                animation: bounce 0.82s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+            }
+            .float2{
+                animation: bounce 0.85s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+
+            }
+            .float3{
+                animation: bounce 0.9s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+
+            }
+            .float4{
+
+                animation: bounce 0.95s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+            }
+            .float5{
+
+                animation: bounce 0.75s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+            }
+            .float6{
+
+                animation: bounce 0.7s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+            }
+            .float7{
+                animation: bounce 0.85s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+
+            }
             .float8{
                 animation: bounce 0.8s;
                 animation-direction: alternate;
@@ -397,13 +491,13 @@ footer{
             .float7{
                 display: block;
                 position: absolute;
-                left: 900px;
+                left: 700px;
                 top: 600px;
             }
             .float8{
                 display: block;
                 position: absolute;
-               left: 870px;
+               left: 670px;
                top: 100px;
                 
             }
@@ -424,12 +518,10 @@ footer{
     }
    
     header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 66px;
+      display: flex;
+      justify-content: space-between;
+    align-items: center;
     
-        
        
         
         .logo{
@@ -457,7 +549,7 @@ footer{
             display: flex;
             justify-content: center;
             align-items: center;
-            
+            margin-left: 100px;
             
 
             h4{
@@ -469,24 +561,27 @@ footer{
                     
                 }
                 a{
-
+                    font-size: 17px;
+                    font-weight: 800;
                     color:#47BD8F;
                     
                 }
             }
 
             button{
-                width: 141px;
+                margin-right: 1rem;
                 border-radius: 8px ;
                 border: none;
-                padding: 8px 16px 16px 16px;
-                margin-left: 47px;
-                margin-right: 1rem;
-                font-size: 16.58px;
+                padding: 15px;
+                margin-left: 42px;
+                
+                font-size: 17px;
+                font-weight: 800;
                 color: #47BD8F;
                 background-color: #47BD8F;
                 a{
                     color: #F9F8F8; 
+                    
                 }
                 &:hover{
                     transform: scaleX(0.95);
@@ -501,10 +596,11 @@ footer{
    
     
     .hero{
-        margin: 100px 20px;
+        
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 4rem;
+        gap: 100px;
+   
         justify-content: center;
         align-items: center;
         
@@ -513,7 +609,7 @@ footer{
     
         .hero-desc{
             margin-top: 0;
-            
+            margin: 0;
            
         
         h2{
@@ -554,13 +650,12 @@ footer{
       }
     
       .our-client{
-        
-        
+    
         h4{
             font-size: 16px;
             color: #DADADA;
-            margin-top: 0;
-            margin-bottom: 1.5em;
+            margin: 0 0  50px 0;
+           
         }
     
         .box-container{
@@ -598,6 +693,7 @@ footer{
             text-align: start;
             font-size: 16.58px;
  
+           
             a{
                 color: #47BD8F;
             }
@@ -624,7 +720,7 @@ footer{
       
     }
     50% {
-      left: calc(100% - 100px);
+      left: calc(100% - 200px);
     }
     100% {
       left: 0;    

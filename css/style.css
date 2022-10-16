@@ -62,7 +62,7 @@ img {
 .wrapper .float .float1 {
   position: absolute;
   top: 800px;
-  left: 20px;
+  left: 100px;
 }
 
 .wrapper .float .float2 {
@@ -264,28 +264,59 @@ footer .checkdp a {
   color: #47BD8F;
 }
 
-@media only screen and (min-width: 600px) {
-  .our-client {
-    width: 100%;
+@media only screen and (min-width: 800px) {
+  .hero h2 {
+    color: #DADADA;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 48px;
   }
-  .our-client .box-container {
+  .hero p {
+    color: #DADADA;
+    line-height: 23px;
+    margin-top: 32px;
+  }
+  .hero h4 {
+    color: #717171;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 32px;
+    text-align: start;
+  }
+  .hero .hero-desc {
+    -webkit-animation: introLoad 1s ease-in;
+            animation: introLoad 1s ease-in;
+    margin: 4.5rem;
+  }
+  .hero .our-client h4 {
+    font-size: 16px;
+    color: #DADADA;
+    margin: 40px 60px;
+  }
+  .hero .our-client .box-container {
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    gap: 1px;
-    width: 100%;
+    margin: 0 auto;
+    gap: 10px;
+    width: 90%;
   }
-  .our-client .box-container .box-1 img {
+  .hero .our-client .box-container .box-1 img {
     width: 100%;
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
+  }
+  .hero .our-client .box-container .box-1 img:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
@@ -301,7 +332,9 @@ footer .checkdp a {
   }
   .wrapper {
     position: relative;
-    margin: 66px 100px 59px 100px;
+    margin-left: 80px;
+    margin-right: 50px;
+    margin-top: 60px;
     background-image: none;
   }
   .wrapper .float {
@@ -311,13 +344,62 @@ footer .checkdp a {
   .wrapper .float img {
     width: 100px;
   }
-  .wrapper .float .float1,
-  .wrapper .float .float2,
-  .wrapper .float .float3,
-  .wrapper .float .float4,
-  .wrapper .float .float5,
-  .wrapper .float .float6,
-  .wrapper .float .float7,
+  .wrapper .float .float1 {
+    -webkit-animation: bounce 0.82s;
+            animation: bounce 0.82s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .wrapper .float .float2 {
+    -webkit-animation: bounce 0.85s;
+            animation: bounce 0.85s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .wrapper .float .float3 {
+    -webkit-animation: bounce 0.9s;
+            animation: bounce 0.9s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .wrapper .float .float4 {
+    -webkit-animation: bounce 0.95s;
+            animation: bounce 0.95s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .wrapper .float .float5 {
+    -webkit-animation: bounce 0.75s;
+            animation: bounce 0.75s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .wrapper .float .float6 {
+    -webkit-animation: bounce 0.7s;
+            animation: bounce 0.7s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .wrapper .float .float7 {
+    -webkit-animation: bounce 0.85s;
+            animation: bounce 0.85s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
   .wrapper .float .float8 {
     -webkit-animation: bounce 0.8s;
             animation: bounce 0.8s;
@@ -359,13 +441,13 @@ footer .checkdp a {
   .wrapper .float .float7 {
     display: block;
     position: absolute;
-    left: 900px;
+    left: 700px;
     top: 600px;
   }
   .wrapper .float .float8 {
     display: block;
     position: absolute;
-    left: 870px;
+    left: 670px;
     top: 100px;
   }
   .wrapper .rec {
@@ -393,7 +475,6 @@ footer .checkdp a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 66px;
   }
   header .logo {
     margin-top: 0;
@@ -427,6 +508,7 @@ footer .checkdp a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: 100px;
   }
   header .number h4 {
     color: #47BD8F;
@@ -435,16 +517,18 @@ footer .checkdp a {
     color: #717171;
   }
   header .number h4 a {
+    font-size: 17px;
+    font-weight: 800;
     color: #47BD8F;
   }
   header .number button {
-    width: 141px;
+    margin-right: 1rem;
     border-radius: 8px;
     border: none;
-    padding: 8px 16px 16px 16px;
-    margin-left: 47px;
-    margin-right: 1rem;
-    font-size: 16.58px;
+    padding: 15px;
+    margin-left: 42px;
+    font-size: 17px;
+    font-weight: 800;
     color: #47BD8F;
     background-color: #47BD8F;
   }
@@ -456,12 +540,11 @@ footer .checkdp a {
             transform: scaleX(0.95);
   }
   .hero {
-    margin: 100px 20px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 100px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -471,6 +554,7 @@ footer .checkdp a {
   }
   .hero .hero-desc {
     margin-top: 0;
+    margin: 0;
   }
   .hero .hero-desc h2 {
     color: #DADADA;
@@ -502,8 +586,7 @@ footer .checkdp a {
   .hero .our-client h4 {
     font-size: 16px;
     color: #DADADA;
-    margin-top: 0;
-    margin-bottom: 1.5em;
+    margin: 0 0  50px 0;
   }
   .hero .our-client .box-container {
     display: -ms-grid;
@@ -573,7 +656,7 @@ footer .checkdp a {
     left: 0;
   }
   50% {
-    left: calc(100% - 100px);
+    left: calc(100% - 200px);
   }
   100% {
     left: 0;
@@ -585,7 +668,7 @@ footer .checkdp a {
     left: 0;
   }
   50% {
-    left: calc(100% - 100px);
+    left: calc(100% - 200px);
   }
   100% {
     left: 0;
