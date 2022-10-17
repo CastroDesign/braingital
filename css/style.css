@@ -43,13 +43,33 @@ img {
   width: 90px;
 }
 
-.wrapper .float .float1,
-.wrapper .float .float2,
-.wrapper .float .float3,
-.wrapper .float .float4,
-.wrapper .float .float5,
-.wrapper .float .float6,
-.wrapper .float .float7,
+.wrapper .float .float2 {
+  -webkit-animation: bounce 0.85s;
+          animation: bounce 0.85s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.wrapper .float .float3 {
+  -webkit-animation: bounce 0.9s;
+          animation: bounce 0.9s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.wrapper .float .float5 {
+  -webkit-animation: bounce 0.75s;
+          animation: bounce 0.75s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
 .wrapper .float .float8 {
   -webkit-animation: bounce 0.8s;
           animation: bounce 0.8s;
@@ -59,33 +79,51 @@ img {
           animation-iteration-count: infinite;
 }
 
+.wrapper .float .float14 {
+  -webkit-animation: bounce 0.86s;
+          animation: bounce 0.86s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
 .wrapper .float .float1 {
+  display: none;
   position: absolute;
   top: 800px;
   left: 100px;
 }
 
 .wrapper .float .float2 {
+  display: block;
   position: absolute;
-  top: 200px;
-  left: 90px;
+  top: 800px;
+  left: 150px;
+  width: 88px;
 }
 
 .wrapper .float .float3 {
+  display: block;
   position: absolute;
-  bottom: -100rem;
-  left: 200px;
+  top: 1400px;
+  left: 150px;
+  width: 93px;
 }
 
 .wrapper .float .float4 {
+  display: none;
   position: absolute;
   top: 600px;
   left: 100px;
 }
 
 .wrapper .float .float5 {
+  display: block;
   position: absolute;
-  left: 80px;
+  top: 600px;
+  left: 100px;
+  width: 78px;
 }
 
 .wrapper .float .float6 {
@@ -98,7 +136,25 @@ img {
 }
 
 .wrapper .float .float8 {
+  display: block;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  width: 62px;
+}
+
+.wrapper .float .float13 {
   display: none;
+  position: absolute;
+}
+
+.wrapper .float .float14 {
+  display: inline-block;
+  position: absolute;
+  top: 400px;
+  left: 150px;
+  width: 71px;
+  height: 103px;
 }
 
 .wrapper .rec {
@@ -342,7 +398,7 @@ footer .checkdp a {
     z-index: -99;
   }
   .wrapper .float img {
-    width: 100px;
+    width: 70px;
   }
   .wrapper .float .float1 {
     -webkit-animation: bounce 0.82s;
@@ -408,47 +464,79 @@ footer .checkdp a {
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
   }
+  .wrapper .float .float13 {
+    -webkit-animation: bounce 0.88s;
+            animation: bounce 0.88s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
   .wrapper .float .float1 {
+    display: block;
     position: absolute;
-    top: 200px;
+    left: 400px;
+    top: 650px;
+    width: 102px;
   }
   .wrapper .float .float2 {
+    display: block;
     position: absolute;
-    left: 450px;
-    top: 400px;
+    left: 850px;
+    top: 600px;
+    width: 88px;
   }
   .wrapper .float .float3 {
+    display: block;
     position: absolute;
     left: 50px;
-    top: 600px;
+    top: 700px;
+    width: 93px;
   }
   .wrapper .float .float4 {
+    display: block;
     position: absolute;
-    left: 50px;
-    top: 400px;
+    left: 600px;
+    top: 600px;
+    width: 62px;
   }
   .wrapper .float .float5 {
+    display: block;
     position: absolute;
-    left: 500px;
-    bottom: -700px;
+    left: 800px;
+    top: 100px;
+    width: 78px;
   }
   .wrapper .float .float6 {
     display: block;
     position: absolute;
     left: 500px;
-    top: 100px;
+    top: 400px;
+    width: 185px;
   }
   .wrapper .float .float7 {
     display: block;
     position: absolute;
-    left: 700px;
-    top: 600px;
+    left: 300px;
+    top: 500px;
+    width: 71px;
   }
   .wrapper .float .float8 {
     display: block;
     position: absolute;
-    left: 670px;
+    left: 470px;
     top: 100px;
+    width: 62px;
+  }
+  .wrapper .float .float13 {
+    display: block;
+    position: absolute;
+    left: 600px;
+    top: 3px;
+    width: 88px;
+  }
+  .wrapper .float .float14 {
+    display: none;
   }
   .wrapper .rec {
     display: block;
