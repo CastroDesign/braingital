@@ -176,7 +176,7 @@ header {
 }
 
 header .logo {
-  margin-top: 63px;
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,7 +197,7 @@ header .number {
 }
 
 .hero {
-  margin: 112px 20px;
+  margin: 30px 20px;
 }
 
 .hero .hero-desc {
@@ -305,7 +305,7 @@ header .number {
 }
 
 footer .checkdp {
-  margin: 3em 2em;
+  margin: 1em 1em;
   text-align: center;
 }
 
@@ -314,9 +314,30 @@ footer .checkdp h4 {
   color: #7B7B7B;
   font-size: 1em;
   margin-bottom: 4.5rem;
+  line-height: 1.7;
 }
 
 footer .checkdp a {
+  color: #47BD8F;
+}
+
+footer .footer_socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+footer .footer_socials a {
   color: #47BD8F;
 }
 
@@ -390,7 +411,7 @@ footer .checkdp a {
     position: relative;
     margin-left: 80px;
     margin-right: 50px;
-    margin-top: 60px;
+    margin-top: 30px;
     background-image: none;
   }
   .wrapper .float {
